@@ -24,4 +24,15 @@
   p {
     @apply text-sm text-white;
   }
+  form {
+    @apply rounded-xl p-4;
+  }
+  lable {
+    @apply mt-4;
+  }
+  input,
+  select,
+  textarea {
+    @apply m-1 rounded bg-gray-600 p-1 outline-none;
+  }
 }
