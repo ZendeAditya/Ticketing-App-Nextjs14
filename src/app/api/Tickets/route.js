@@ -11,3 +11,12 @@ export const POST = async (req) => {
     return NextResponse.json({ message: "Error", error }, { status: 500 });
   }
 };
+
+export const GET = async () => {
+  try {
+    const tickets = await Ticket.find();
+    return NextResponse.json({ tickets });
+  } catch (error) {
+    return NextResponse.json({ msg: error });
+  }
+};
